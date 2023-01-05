@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  connectomics:
+    build: .
+    image: chrisroat/connectomics
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/tf/work
